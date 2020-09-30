@@ -28,7 +28,7 @@ public class NumberGame {
             {
                 System.out.println(playerGuess + " is too low, please guess again: ");
                 playerGuess = keyboard.nextInt();
-                guessAttempts += 1;
+                guessAttempts ++;
             }
 
             //check if guess is too high
@@ -36,17 +36,15 @@ public class NumberGame {
             {
                 System.out.println(playerGuess + " is too high, please guess again: ");
                 playerGuess = keyboard.nextInt();
-                guessAttempts += 1;
+                guessAttempts ++;
             }
 
             //checks if guess is correct
             if (playerGuess == secretNumber)
-            {
                 correct = true;
-            }
         }
 
         //prints the win statement and guess number
-        System.out.println(playerGuess + " was the correct answer! It only took you " + guessAttempts + " guesses!");
+        System.out.printf("%d was the correct answer! It only took you %d guesses!\n",playerGuess,guessAttempts);
     }
 }
