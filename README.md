@@ -37,3 +37,32 @@ This program is very simple and all required instructions are displayed to you o
 7. Once the user has correctly guess the number, or run out of attempts, the computer will begin the final portion of the code
 8. The computer will display to the user: the correct number, number of guesses taken, and a thank you message
 9. the program will terminate correctly
+
+## Customization
+In order to customize this game, the user should look at specific lines of code:
+* to set new boundaries for the random number 
+    1. Locate the line that sets the random number "int secretNumber = rand.nextInt(101)"
+    2. Change the boundaries within the parenethesis
+        - NOTE: The number you place in the parenethis is the upper limit - 1, so if you place 101, the game bounds are between 0-100
+    3. Save and run the program with your custom bounds
+
+## Support
+If the code does not work as intended in the above segment please contact me at:
+* blankblank@blankmail.com
+* 111 111-1111
+
+Here is the link to the Intellij IDE which is what I use for my Java class: https://www.jetbrains.com/idea/
+
+## Roadmap
+In the future I plan to add a multitude of features to create a much better experience for the game:
+* A function that asks the user what boundaries they wish to set before the code begins
+    - This would create a much easier user interface rather than editing the code to set the boundaries
+* A restriction function that will allow the user to select a difficulty for their guessing experience
+    - Easy will give ulimited guess attempts
+    - Medium will give the user 10 attempts 
+    - Hard will give the user 5 attempts
+    - Extreme will give the user 1 attempt to guess the number
+* A replay function that will ask the user if they would like to play again after the first round
+    - adding to this function would allow for an interest score system of user wins vs computer wins
+    - a gaunlet feature could also be added where the user would play a set amount of matches to see who wins
+
